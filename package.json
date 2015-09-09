@@ -1,0 +1,56 @@
+{
+  "name": "article-graph",
+  "version": "0.1.0",
+  "description": "A demo of GraphQL with a weak ArticleServices backend.",
+  "main": "dist/article-graph.js",
+  "scripts": {
+    "build": "./scripts/build.sh",
+    "build-graphiql": "./scripts/build-graphiql.sh",
+    "prepublish": "",
+    "start": "node server.js",
+    "start-graphiql": "node server-graphiql.js",
+    "lint": "eslint src",
+    "test": "./node_modules/.bin/mocha --compilers js:babel/register test/*-test.js",
+    "test-watch": "./node_modules/.bin/mocha --compilers js:babel/register -w test/*-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HurricaneJames/article-graph.git"
+  },
+  "keywords": [
+    "graphql",
+    "demo"
+  ],
+  "author": "James Burnett <HurricaneJamesEsq@gmail.com> (http://github.com/HurricaneJames)",
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/HurricaneJames/article-graph/issues"
+  },
+  "homepage": "https://github.com/HurricaneJames/article-graph",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babel-core": "^5.4.7",
+    "babel-eslint": "^3.1.9",
+    "babel-loader": "^5.1.2",
+    "eslint-plugin-react": "^2.3.0",
+    "expect.js": "^0.3.1",
+    "jsdom": "^6.0.0",
+    "mocha": "^2.2.5",
+    "sinon": "^1.15.4",
+    "react-hot-loader": "^1.2.8",
+    "webpack": "^1.9.6",
+    "webpack-dev-server": "^1.8.2"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "express": "^4.13.3",
+    "fetch": "^0.3.6",
+    "graphiql": "^0.1.3",
+    "graphql": "^0.4.2",
+    "immutable": "^3.7.4",
+    "react": "^0.14.0-beta3",
+    "react-dom": "^0.14.0-beta3",
+    "restify": "^4.0.0"
+  }
+}
